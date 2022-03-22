@@ -1,9 +1,15 @@
 :root {
   --yellow: #fcae16;
+  --yellow-h: #c98c14;
+
   --green: #003333;
+  --green-h: #012424;
   --red: #e06363;
+  --red-h: #a74c4c;
   --grey: #efefef;
-  --ufont: "Montserrat", sans-serif;
+  --grey-h: #d3d3d3;
+  --ufont: "Open Sans", sans-serif;
+  --ufontsub: "lato";
 }
 
 html,
@@ -30,9 +36,7 @@ nav .nav-logo {
 nav .nav-logo img {
   width: 145px;
   height: auto;
-  padding: 20px;
-  padding-left: 50px;
-  padding-top: 10px;
+  padding: 10px 20px 20px 200px;
 }
 
 /* <!-- hero section --> */
@@ -43,6 +47,8 @@ nav .nav-logo img {
 
 .hero-section {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-section .video-section {
@@ -65,15 +71,11 @@ nav .nav-logo img {
   top: 87px;
   background: rgba(0, 0, 0, 0.4);
   color: #f1f1f1;
-  width: 100%;
-  padding: 0px;
   display: flex;
   flex-direction: column;
   bottom: 0;
-  padding-top: 0px;
-  justify-content: left !important;
-  align-items: flex-start;
   height: 600px;
+  width: 100%;
 }
 
 .hero-section .content-video .header-main-text {
@@ -87,7 +89,7 @@ nav .nav-logo img {
 }
 
 .hero-section .content-video .header-main-text p {
-  text-align: left;
+  text-align: center;
   font-size: 65px !important;
   padding-top: -5px;
   z-index: 20;
@@ -106,9 +108,11 @@ nav .nav-logo img {
   padding-top: 20px;
   margin-top: 80px;
   padding-left: 40px;
+  width: 100%;
+  padding-left: 0px;
 }
 .hero-section .content-video .header-main-text h1 {
-  text-align: left;
+  text-align: center;
   font-size: 65px !important;
   padding-top: -5px;
   z-index: 20;
@@ -117,9 +121,11 @@ nav .nav-logo img {
 }
 
 .hero-section .content-video .joinus-button {
-  padding: 40px;
+  padding-top: 40px;
   padding-bottom: 0px;
   text-align: center;
+  width: 100%;
+  padding-left: 0px;
 }
 
 .hero-section .content-video .joinus-button button {
@@ -157,7 +163,7 @@ nav .nav-logo img {
   font-size: 40px;
   line-height: 0%;
   text-transform: capitalize;
-  color: rgb(49, 49, 49);
+  color: var(--green);
   padding-top: 0px;
   width: 100%;
   text-align: center;
@@ -172,6 +178,7 @@ nav .nav-logo img {
   padding: 0%;
   margin-bottom: 50px;
   text-align: center;
+  font-family: var(--ufontsub);
 }
 
 #apply-page-position-details-hero p span {
@@ -184,7 +191,7 @@ nav .nav-logo img {
 
 #apply-page-position-details-hero .ulead-video {
   position: relative;
-  width: 100%;
+  width: 95%;
   padding-bottom: 56.25%;
   height: 0;
   display: flex;
@@ -234,13 +241,18 @@ p {
   color: var(--green);
 }
 
+.skyrocket-section .skyrocket-content p {
+  font-family: var(--ufontsub);
+  font-size: 18px;
+}
+
 .skyrocket-section .skyrocket-content h2 {
   font-size: 40px;
   margin-bottom: 0;
 }
 
 .skyrocket-section .skyrocket-img {
-  width: 100%;
+  width: 84%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -261,7 +273,7 @@ p {
   align-items: center;
 }
 .application-criteria-section .section-title {
-  padding: 0px 100px;
+  padding: 0px 200px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -272,22 +284,24 @@ p {
   text-align: center;
   margin: 55px 0px;
   margin-bottom: 10px;
-  font-family: "Montserrat", sans-serif;
   font-size: 40px;
+  color: var(--green);
 }
 
 .application-criteria-section .section-title > p {
   padding: 10px 0px;
   text-align: center;
   font-size: 18px;
-  font-weight: 600;
   width: 80%;
+  font-family: var(--ufontsub);
+  font-size: 18px;
 }
 
 .application-criteria-section .section-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 70%;
 }
 
 .application-criteria-section .section-content .section-item {
@@ -300,6 +314,15 @@ p {
   padding: 20px;
   justify-content: center;
   align-items: center;
+}
+
+.application-criteria-section .section-content .section-item:nth-child(2) img {
+  margin-top: 13px;
+}
+
+.application-criteria-section .section-content .section-item p {
+  font-family: var(--ufontsub);
+  font-size: 18px;
 }
 
 .application-criteria-section .section-content .section-item img {
@@ -369,12 +392,12 @@ p {
 }
 
 .application-process .application-process-img img {
-  width: 80%;
+  width: 70%;
 }
 /* <!-- Roles and Responsibilitt section --> */
 
 .roles-section {
-  padding: 20px 50px;
+  padding: 20px 270px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -398,6 +421,8 @@ p {
 .roles-section .roles-content p {
   text-align: center;
   width: 90%;
+  font-family: var(--ufontsub);
+  font-size: 18px;
 }
 
 .roles-section .roles-details {
@@ -405,6 +430,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .roles-section .roles-details .r-card {
@@ -414,19 +440,32 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 24%;
+  width: 50%;
   height: 350px;
 }
 
 .roles-section .roles-details .r-card:first-child {
   background-color: var(--yellow);
 }
+
+.roles-section .roles-details .r-card:first-child:hover {
+  background-color: var(--yellow-h);
+}
+
 .roles-section .roles-details .r-card:nth-child(2) {
   background-color: var(--red);
 }
 
+.roles-section .roles-details .r-card:nth-child(2):hover {
+  background-color: var(--red-h);
+}
+
 .roles-section .roles-details .r-card:nth-child(3) {
   background-color: var(--grey);
+}
+
+.roles-section .roles-details .r-card:nth-child(3):hover {
+  background-color: var(--grey-h);
 }
 
 .roles-section .roles-details .r-card:nth-child(3) .r-title p {
@@ -440,6 +479,10 @@ p {
 }
 .roles-section .roles-details .r-card:nth-child(4) {
   background-color: var(--green);
+}
+
+.roles-section .roles-details .r-card:nth-child(4):hover {
+  background-color: var(--green-h);
 }
 
 .roles-section .roles-details .r-card .r-title {
@@ -476,11 +519,13 @@ p {
   margin-top: 36px;
   padding: 1px 43px;
   text-align: left;
+  font-family: var(--ufontsub);
+  font-size: 18px;
 }
 
 /* <!-- Perks section --> */
 .perks-section {
-  padding: 20px 100px;
+  padding: 20px 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -514,17 +559,19 @@ p {
 }
 
 .perks-section .perks-icons .perk-icon p {
-  width: 100%;
+  width: 67%;
+  font-family: var(--ufontsub);
+  font-size: 18px;
 }
 
 .perks-section .perks-icons .perk-icon img {
-  width: 180px;
+  width: 150px;
   height: auto;
 }
 
 /* <!-- Levels section --> */
 .levels-section {
-  padding: 20px 100px;
+  padding: 20px 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -612,6 +659,8 @@ p {
 .levels-section .level-content .yi-yl-level .yl-level .yl-content p {
   text-align: left;
   width: 80%;
+  font-family: var(--ufontsub);
+  font-size: 18px;
 }
 
 .levels-section .level-img {
@@ -662,6 +711,7 @@ p {
   width: 20%;
   padding: 20px;
   margin: 20px;
+  height: 800px;
 }
 
 .testimonials-section .testimonilals-cards .testimonilals-card .card-img {
@@ -669,6 +719,7 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 30%;
 }
 
 .testimonials-section .testimonilals-cards .testimonilals-card .card-img img {
@@ -693,10 +744,13 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 55%;
 }
 
 .testimonials-section .testimonilals-cards .testimonilals-card .card-content p {
   text-align: left;
+  font-family: var(--ufontsub);
+  font-size: 18px;
 }
 
 .testimonials-section .testimonilals-cards .testimonilals-card .card-quotation {
@@ -704,6 +758,7 @@ p {
   justify-content: center;
   align-items: center;
   margin-bottom: 70px;
+  height: 7%;
 }
 /* <!-- FAQ section --> */
 
@@ -842,6 +897,8 @@ p {
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
   text-align: left;
+  font-family: var(--ufontsub);
+  font-size: 18px;
 }
 
 @media screen and (max-width: 776px) {
@@ -880,8 +937,7 @@ p {
 /* <!-- footer section --> */
 
 .footer-section {
-  margin: 0 -80px;
-  padding: 40px 80px;
+  padding: 15px 200px 15px;
   background-color: #141519;
 }
 
